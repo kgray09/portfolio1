@@ -1,0 +1,322 @@
+/* You can add custom CSS and extend Boostrap styles in this file.  Remember, Bootstrap is just CSS at the end of the day! */
+
+
+/* TABLE OF CONTENTS */
+/* 1. FONT */
+/* 2. BODY */
+/* 3. KEYFRAME ANIMATIONS */
+/* 4. NAVBAR */
+/* 5. HERO SECTION */
+/* 6. MISSION SECTION */
+/* 7. SKILLS SECTION */
+/* 8. INSPIRATION SECTION */
+/* 9. RESUME SECTION */
+
+
+/* 1. FONT */
+
+@font-face {
+  font-family: "neon";
+  src: url("font/bimbo.regular-webfont.woff2") format("woff2"),
+       url("font/bimbo.regular-webfont.woff") format("woff");
+}
+
+/* 2. BODY/CHANGE ACROSS WHOLE PAGE */
+
+body {
+  background-color: #1E212B;
+}
+
+h3 { /* This manages section headers */
+  text-align: center;
+  padding-top: 10vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: #1E212B;
+  margin-bottom: 7vh;
+}
+
+.row { /* DO NOT CHANGE */
+  margin: 0 !important;
+}
+
+/* 3. KEYFRAME ANIMATIONS */
+
+@keyframes pulsate {
+  100% {
+    text-shadow:
+      0 0 4px #f8f8ff,
+      0 0 11px #f8f8ff,
+      0 0 19px #f8f8ff,
+      0 0 40px #243B4A,
+      0 0 80px #243B4A,
+      0 0 90px #243B4A,
+      0 0 100px #243B4A,
+      0 0 150px #243B4A;
+  } 
+  0% {
+    text-shadow:
+      0 0 2px #f8f8ff,
+      0 0 4px #f8f8ff,
+      0 0 6px #f8f8ff,
+      0 0 10px #243B4A,
+      0 0 45px #243B4A,
+      0 0 55px #243B4A,
+      0 0 70px #243B4A,
+      0 0 80px #243B4A;
+  }
+}
+
+/* 4. NAVBAR */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.bi-house {
+  font-size: 1.5rem;
+  color: #1E212B;
+}
+
+.navbar {
+  margin-bottom: 100px;
+  background-color: #55868C !important;
+  text-transform: uppercase;
+}
+
+.navbar-cust {
+ padding: 0 20px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #1E212B;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* 5. HERO SECTION */
+
+#hero-section { 
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .5)), url(/img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 50vh;
+  padding: 0;
+  margin-top: 50px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.profile {  /* This manages the profile photo */
+  max-height: 150px;
+  margin-top: 30vh;
+  border: solid #55868C .5em;
+}
+
+.name {  /* This manages the profile name/animation */
+  color: #eff0f0;
+  font-family: 'neon', cursive;
+  font-size: 3em;
+  animation: pulsate 8s infinite;
+}
+
+h2 { /* This manages the tagline text */
+  color: white;
+  text-align: center;
+  padding-bottom: 10vh;
+  font-weight: 300;
+  font-size: 1em;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  text-shadow: 1px 1px rgb(27, 23, 23);
+ }
+
+/* 6. MISSION SECTION */
+
+h1 { /* This manages the body text */
+  color: #EEC584;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 5vh;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+#mission-section {
+  background-color: #1E212B;
+  color: #55868C;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+}
+
+.mission-text {
+  text-align: center; 
+}
+
+.mission-title {
+  color: #55868C;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+/* 7. SKILLS SECTION */
+#skills-section {
+  background-color: #55868C;
+  padding-bottom: 50px;
+}
+.skills-icon {
+  font-size: 10em;
+  color: white;
+}
+
+.skills-text {
+  color: #1E212B;
+  margin: 15px;
+  font-size: 2em;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+/* 8. INSPIRATION SECTION */
+
+#inspiration-section img {
+  object-fit: cover;
+  height: 60vh;
+}
+
+#inspiration-section {
+  background-color: #1E212B;
+
+}
+
+.pad-cust {
+  padding-bottom: 50px;
+}
+
+.inspiration-text {
+  color: #55868C;
+  font-weight: 400;
+}
+
+.carousel-caption > h5 {
+  font-size: 1.5em;
+}
+
+.carousel-caption > p {
+  font-size: 1em;
+}
+
+.carousel-caption {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, .4));
+  padding: 10px;
+}
+
+.carousel { /* Adusts the size/width of the carousel */
+  margin: 0 6vw;
+}
+
+.img-cust {
+  min-height: 100%;
+  object-fit: cover;
+}
+
+/* SKILLS SECTION */
+
+a {
+  text-decoration: none;
+}
+
+.contact-icons {
+  font-size: 4em;
+  color: white;
+}
+
+.mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact-section {
+  background-color: #55868C;
+}
+/* FOOTER */
+#footer-section {
+  background-color: #55868C;
+}
+.footer-text {
+  color: #1E212B;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+}
+
+.custom-shape-divider-top-1645655271 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #55868C;
+    fill: #1E212B;
+}
+
+.custom-shape-divider-top-1645657968 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background-color: #1E212B;
+    fill: #55868C;
+}
+
+section {
+  margin: 0;
+  padding: none;
+}
+
+svg {
+  margin: none;
+  padding: none;
+}
+
+/* 9. RESUME SECTION */
+
+.resume-img {
+  margin-top: 50px;
+  width: 100%;
+  padding: 20px;
+}
+
+.bi-download {
+  font-size: 1em;
+  color: white;
+}
+
+.bi-download:hover {
+  font-size: 1em;
+  color: #55868C;
+}
+
+.resume {
+  padding-bottom: 10px;
+}
+
+.resume_text {
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+p < resume_text {
+  margin: none;
+}
