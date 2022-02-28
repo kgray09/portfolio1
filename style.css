@@ -43,8 +43,8 @@ h3 { /* This manages section headers */
 }
 
 /* 3. KEYFRAME ANIMATIONS */
-
-@keyframes pulsate {
+/*  COMMENTED OUT FOR LAG */
+/* @keyframes pulsate {
   100% {
     text-shadow:
       0 0 4px #f8f8ff,
@@ -67,7 +67,7 @@ h3 { /* This manages section headers */
       0 0 70px #243B4A,
       0 0 80px #243B4A;
   }
-}
+} */
 
 /* 4. NAVBAR */
 
@@ -120,7 +120,8 @@ h3 { /* This manages section headers */
   color: #eff0f0;
   font-family: 'neon', cursive;
   font-size: 3em;
-  animation: pulsate 8s infinite;
+/* animation: pulsate 8s infinite; */ 
+/* animation is creating lag   */
 }
 
 h2 { /* This manages the tagline text */
