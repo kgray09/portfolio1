@@ -173,6 +173,10 @@ h1 { /* This manages the body text */
   color: white;
 }
 
+.skills-icon:hover{
+  text-shadow: 2px 2px black;
+}
+
 .skills-text {
   color: #1E212B;
   margin: 15px;
