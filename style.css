@@ -232,6 +232,11 @@ a {
   text-decoration: none;
 }
 
+.contact-icons:hover {
+  text-shadow: 2px 2px black;
+}
+
+
 .contact-icons {
   font-size: 4em;
   color: white;
