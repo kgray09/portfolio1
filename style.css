@@ -18,7 +18,7 @@
 @font-face {
   font-family: "neon";
   src: url("font/bimbo.regular-webfont.woff2") format("woff2"),
-       url("font/bimbo.regular-webfont.woff") format("woff");
+  url("font/bimbo.regular-webfont.woff") format("woff");
 }
 
 /* 2. BODY/CHANGE ACROSS WHOLE PAGE */
@@ -87,7 +87,7 @@ h3 { /* This manages section headers */
 }
 
 .navbar-cust {
- padding: 0 20px;
+  padding: 0 20px;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -95,7 +95,23 @@ h3 { /* This manages section headers */
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.nav-item::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform .50s ease;
+}
 
+.nav-item:hover::after {
+  transform: scaleX(1);
+}
 /* 5. HERO SECTION */
 
 #hero-section { 
@@ -327,6 +343,6 @@ svg {
   padding-top: 3px;
 }
 
-p < resume_text {
+p > resume_text {
   margin: none;
 }
