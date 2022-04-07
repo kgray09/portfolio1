@@ -69,6 +69,18 @@ h3 { /* This manages section headers */
   }
 } */
 
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 /* 4. NAVBAR */
 
 .navbar-nav {
@@ -191,6 +203,8 @@ h1 { /* This manages the body text */
 
 .skills-icon:hover{
   text-shadow: 2px 2px black;
+  display: inline-block;
+  animation: float 5s ease-in-out infinite;
 }
 
 .skills-text {
